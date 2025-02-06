@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unità di misura assolute e relative</title>
+    <style>
+      /* IMPORTO UN FONT DA GOOGLE FONTS */
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+      main {
+        font-family: 'Lato', serif;
+      }
+
+      main section:nth-of-type(1) {
+        /* SOLO ALLA PRIMA SECTION DENTRO MAIN */
+        font-size: 35px;
+        color: rgba(50, 50, 200, 0.3);
+      }
+
+      section article {
+        font-size: 0.8em; /* significa l'80% di 35px! */
+      }
+      /* Poichè alla prima section abbiamo dato una font-size di 35px,
+      il suo article (che è impostato all'80% del padre) risulterà di 28px; */
+      /* Ma nella seconda section, in cui NON è stato applicato nessun particolare
+      font-size, l'article al suo interno risulterà essere l'80% del DEFAULT,
+      che sarebbe 16px -> 12,8px */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>UNITÀ DI MISURA IN CSS</h1>
+    </header>
+    <main>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          aliquam voluptatum earum eius similique voluptate sapiente possimus?
+          Possimus dolore saepe voluptate molestiae, facilis maiores eligendi
+          laboriosam molestias exercitationem aut est.
+        </p>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            provident, quibusdam eaque id totam ea facere blanditiis
+          </p>
+        </article>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          aliquam voluptatum earum eius similique voluptate sapiente possimus?
+          Possimus dolore saepe voluptate molestiae, facilis maiores eligendi
+          laboriosam molestias exercitationem aut est.
+        </p>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            provident, quibusdam eaque id totam ea facere blanditiis
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
